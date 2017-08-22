@@ -1,0 +1,221 @@
+/*body {
+  background: linear-gradient(-90deg, purple, grey);
+}*/
+
+body {
+  
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+  
+  }
+
+main {
+  flex: 1 0 auto;
+}
+.empty{
+  background-color: yellow;
+  height: 700px;
+  width: 700px;
+
+}
+
+h4 {
+  font-size: 50px;
+  color: white;
+  /*margin-top: 80%;*/
+  font-family: 'Pacifico', cursive;
+}
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.navbar-default .navbar-nav>li>a {
+    /*color: #777;*/
+    color: white;
+    font-size: 18px;
+    text-shadow: 1.5px 1.5px black;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 10px;
+}
+
+.navbar-default .navbar-brand {
+    color: #777;
+    font-size: 21px;
+    text-shadow: 2px 2px black;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.nav-login {
+  width: 90px;
+  height: 50px;
+  background-color: black;
+  opacity: .5;
+}
+
+.nav-register {
+  width: 115px;
+  height: 50px;
+  background-color: black;
+  opacity: .5;
+}
+
+.btn {
+  /*font-size: 24px;*/
+  padding: 25px, 25px , 25px, 25px;
+}
+
+#schedule-button {
+    position: fixed;
+    margin: auto;
+    left: 0;
+    right: 120px;
+    top: 0;
+    bottom: 50px;
+    width: 100px; 
+    height: 30px; 
+    background-color: #fff;
+    border-radius: 300px;
+    white-space: nowrap;
+    font-weight: 700;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+}
+
+#call-button {
+    position: fixed;
+    margin: auto;
+    left: 120px;
+    right: 0;
+    top: 0;
+    bottom: 50px;
+    width: 100px; 
+    height: 30px; 
+    background-color: #fff;
+    border-radius: 300px;
+    white-space: nowrap;
+    font-weight: 700;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+    vertical-align: middle;
+    display: inline-block;
+    text-align: center;
+}
+
+
+.heading-one {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top:150px;
+  bottom: 0px;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Just Another Hand';
+  font-size: 84px;
+}
+
+.heading-two {
+  position: fixed;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 250px;
+  bottom: 0px;
+  color: white;
+  text-align: center;
+  font-weight: 300;
+  font-family: 'Just Another Hand', cursive;
+  font-size: 42px;
+}
+
+ /* body {
+    background-image: url("images/bbs.jpg");
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin-bottom: 70%;
+  }
+
+<<<<<<< HEAD:public/css/style.css
+  main {
+    flex: 1 0 auto;
+  }*/
+
+
+  /*Login signup form */
+
+    /* label color */
+   .input-field label {
+     color: #000;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #000;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid yellow;
+     box-shadow: 0 1px 0 0 yellow;
+
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #000;
+     box-shadow: 0 1px 0 0 #000;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #000;
+   }
+h4{
+  font-size: 100px;
+  font-family: sans-serif;
+}
+
+
+/*section {
+  background-color: white;
+  border-radius: 25px;
+}
+
+thead tr th{
+  width: 50px;
+}
+
+tbody tr td{
+  width: 50px;
+}
+
+caption{
+  text-align: center;
+}
+
+.off{
+  visibility: hidden;
+}
+
+th{
+  width:50px;
+}
+   */
+=======
+
+>>>>>>> 7fac69eec67ca5c8dfecdab4dda7e3a951e444a2:public/css/landing.css
