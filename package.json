@@ -1,11 +1,12 @@
+
+
 {
   "name": "rush-hour",
   "version": "1.0.0",
   "description": "### Table of Contents 1. Dependencies 2. Technologies 3. Description 4. Use 5. Credits",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -19,10 +20,22 @@
   },
   "homepage": "https://github.com/Georgeyoo/rush-hour#readme",
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.17.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
     "express": "^4.15.4",
-    "materialize-css": "^0.100.1",
+    "express-handlebars": "^3.0.0",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.5",
+    "express-validator": "^3.2.1",
     "mysql2": "^1.4.1",
-    "sequelize": "^4.5.0"
-  },
-  "devDependencies": {}
+    "passport": "^0.4.0",
+    "passport-github": "^1.1.0",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.6.0"
+  }
 }
+
