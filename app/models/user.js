@@ -49,6 +49,12 @@ module.exports = function(sequelize, Sequelize) {
  
  
     });
+
+    // User.associate = function(models) {
+    //     User.hasOne(models.Appointments, {
+    //         onDelete: "cascade"
+    //     });
+    // };
  
     return User;
  
