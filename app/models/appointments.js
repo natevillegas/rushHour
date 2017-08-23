@@ -28,9 +28,7 @@ module.exports = function(sequelize, Sequelize) {
     
     // Appointments.associate = function(models) {
     //     Appointments.belongsTo(models.User, {
-    //         foreignKey: {
-    //         allowNull: false
-    //         }
+    //         foreignKey: "id"
     //     });
     // };
 
