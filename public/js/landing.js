@@ -1,8 +1,6 @@
 $.backstretch("images/bbs.jpg");
 
 
-<<<<<<< HEAD
-
 
 //create local variable to store the value of email and password
 var customerTimeSelected = "";
@@ -114,5 +112,3 @@ $('#resetSchedule').on('click', function () {
 // $("#time").click(function() {
 //     $('.timepicker').show();
 // });
-=======
->>>>>>> 7fac69eec67ca5c8dfecdab4dda7e3a951e444a2
