@@ -3,7 +3,6 @@
    background: transparent;
    border-color: transparent;
 }
-
 .navbar-default .navbar-nav>li>a {
     color: white;
     font-size: 18px;
@@ -12,7 +11,6 @@
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
 }
-
 .navbar-default .navbar-brand {
     color: white;
     font-size: 21px;
@@ -21,7 +19,6 @@
     text-transform: uppercase;
     font-family: 'Open Sans', sans-serif;
 }
-
 .btn {
   
     margin: 0 auto;
@@ -38,7 +35,6 @@
     margin-bottom: 10px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 } 
-
 /*.heading-one {
   position: fixed;
   margin: auto;
@@ -52,7 +48,6 @@
   font-family: 'Just Another Hand';
   font-size: 84px;
 }*/
-
 /*.heading-two {
   position: fixed;
     margin: auto;
@@ -71,45 +66,34 @@
   background-color: white;
   border-radius: 25px;
 }
-
 thead tr th{
   width: 50px;
 }
-
 tbody tr td{
   width: 50px;
 }
-
 caption{
   text-align: center;
 }
-
 .off{
   visibility: hidden;
 }
-
 th{
   width:50px;
 }*/
-
 #datepickerBackground{
     text-align: center;
     background: rgba(225, 255,255,0.70);
      /*margin-bottom: 70%;*/
   margin-top: 10%;
-
 }
-
 #datepicker{
     color:black;
     font-weight: bolder;
 }
-
 #scheduleButton{
     background-color: rgba(255, 255,255,0.70);
-
 }
-
 /*footer{
     position: bottom;
     right:0;
@@ -119,27 +103,19 @@ th{
     background-color: #009F8D;
     text-align: center;
 }*/
-
 #morningButtons{
     width:50%;
-
 }
-
 #afternoonButtons{
     width:50%;
 }
-
-
-
 .container{
   margin-top: 20%;
 }
-
 #jumbotron{
   margin-bottom: 50%;
   margin-top: 50%;
 }
-
 #scheduleButton{
  margin-bottom: 20%;
   /*margin-top: 20%;*/
