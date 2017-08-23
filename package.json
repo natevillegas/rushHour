@@ -1,5 +1,3 @@
-
-
 {
   "name": "rush-hour",
   "version": "1.0.0",
@@ -30,6 +28,7 @@
     "express-messages": "^1.0.1",
     "express-session": "^1.15.5",
     "express-validator": "^3.2.1",
+    "materialize-css": "^0.100.1",
     "mysql2": "^1.4.1",
     "passport": "^0.4.0",
     "passport-github": "^1.1.0",
@@ -38,4 +37,3 @@
     "sequelize": "^4.6.0"
   }
 }
-

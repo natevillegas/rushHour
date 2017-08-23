@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
       <!-- let browser know website is optimized for mobile -->
      <meta charset="UTF-8">
@@ -16,32 +15,25 @@
   
    <!-- JQuery CDN -->
    <script src="https://code.jquery.com/jquery.js"></script>
-
    <!-- Bootstrap CDN -->
    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
    <!-- jQuery Backstretch CDN -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-
    <!-- Link to Custom CSS -->
    <link rel="stylesheet" type="text/css" href="css/schedule.css">
-
    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-
    <!-- Google Fonts: Open Sans -->
    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
    <!-- Google Fonts: Just Another Hand -->
    <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
    <!-- Google Icon Font -->
    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
  <!-- Compiled and minified CSS -->
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
  
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
-
   <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -52,9 +44,7 @@
       <!-- Link to Custom CSS -->
   <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
   <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
-
 </head>
-
 <body>
 <nav>
   <div class="nav-wrapper teal accent-4">
@@ -66,8 +56,6 @@
       </ul>
   </div> 
 </nav>
-
-
 <!-- class="jumbotron"  -->
 <div class="container">
    <div class="jumbotron" id="datepickerBackground">
@@ -82,32 +70,31 @@
         <button class="btn timeButton" type="submit" value="10:30AM">10:30AM</button>
         <button class="btn timeButton" type="submit" value="11:00AM">11:00AM</button>
         <button class="btn timeButton" type="submit" value="11:30AM">11:30AM</button>
-        <button class="btn timeButton" type="submit" value="12:00AM">12:00AM</button>
-        <button class="btn timeButton" type="submit" value="12:30AM">12:30AM</button>
+        
       </div>
       <br>
       <span class="afternoonTime">Afternoon Time</span>
       <br>
       <div class="container afternoonTime" id="afternoonButtons">
-         <button class="btn timeButton" type="submit" value="1:00AM">1:00AM</button>
-        <button class="btn timeButton" type="submit" value="1:30AM">1:30AM</button>
-        <button class="btn timeButton" type="submit" value="2:00AM">2:00AM</button>
-        <button class="btn timeButton" type="submit" value="2:30AM">2:30AM</button>
-        <button class="btn timeButton" type="submit" value="3:00AM">3:00AM</button>
-        <button class="btn timeButton" type="submit" value="3:30AM">3:30AM</button>
-        <button class="btn timeButton" type="submit" value="4:00AM">4:00AM</button>
-        <button class="btn timeButton" type="submit" value="4:30AM">4:30AM</button>
-        <button class="btn timeButton" type="submit" value="5:00AM">5:00AM</button>
-        <button class="btn timeButton" type="submit" value="5:30AM">5:30AM</button>
-        <button class="btn timeButton" type="submit" value="6:00AM">6:00AM</button>
-        <button class="btn timeButton" type="submit" value="6:30AM">6:30AM</button>
-
+        <button class="btn timeButton" type="submit" value="12:00PM">12:00PM</button>
+        <button class="btn timeButton" type="submit" value="12:30PM">12:30PM</button>
+         <button class="btn timeButton" type="submit" value="1:00PM">1:00PM</button>
+        <button class="btn timeButton" type="submit" value="1:30PM">1:30PM</button>
+        <button class="btn timeButton" type="submit" value="2:00PM">2:00PM</button>
+        <button class="btn timeButton" type="submit" value="2:30PM">2:30PM</button>
+        <button class="btn timeButton" type="submit" value="3:00PM">3:00PM</button>
+        <button class="btn timeButton" type="submit" value="3:30PM">3:30PM</button>
+        <button class="btn timeButton" type="submit" value="4:00PM">4:00PM</button>
+        <button class="btn timeButton" type="submit" value="4:30PM">4:30PM</button>
+        <button class="btn timeButton" type="submit" value="5:00PM">5:00PM</button>
+        <button class="btn timeButton" type="submit" value="5:30PM">5:30PM</button>
+        <button class="btn timeButton" type="submit" value="6:00PM">6:00PM</button>
+        <button class="btn timeButton" type="submit" value="6:30PM">6:30PM</button>
       </div>
        <button type="button" class="btn" type="submit" id="schedule">Schedule</button>
        <button type="button" class="btn" type="reset" id="resetSchedule">Reset</button>
    </div>
 </div>
-
 <div class="container fluid" id="reservationInfo">
    <div class="jumbotron" id="scheduleButton">
       <br>
@@ -116,12 +103,16 @@
       <p id="reservationTime"></p>
    </div>
 </div>
-  <!-- Link to landing.js -->
+<!-- <footer>
+  <p>Copyright 2017</p>
+  <p>Contact information: <a href="#"></a></p>
+</footer>   -->
+      
+    
+   <!-- Link to landing.js -->
    <script type="text/javascript" src="js/landing.js"></script>
-
    <!-- jQuery Backstretch CDN -->
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
-
    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>           
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script> --> 
   </body>
