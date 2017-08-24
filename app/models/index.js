@@ -39,7 +39,7 @@ db.user = require('./user.js')(sequelize, Sequelize);
 db.appointments = require('./appointments.js')(sequelize, Sequelize);
 
 //Relations 
-db.appointments.belongsTo(db.user);  
-db.user.hasMany(db.appointments);
+// db.appointments.belongsTo(db.user);  
+// db.user.hasMany(db.appointments);
 
 module.exports = db;

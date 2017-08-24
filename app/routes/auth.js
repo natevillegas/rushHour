@@ -1,4 +1,5 @@
 var authController = require('../controllers/authcontroller.js');
+var db = require("../models"); 
  
 module.exports = function(app, passport) {
     app.get('/signup', authController.signup);
@@ -18,6 +19,17 @@ module.exports = function(app, passport) {
         }
  
     ));
+
+    // Get request to obtain Appointments table data for insertion to dashboard calendar
+    app.get("/api", function(req, res) {
+         db.appointments.findAll({
+            // include: {
+            //     model: db.user
+            // }
+         }).then(function(dbPost) {
+          res.json(dbPost);
+        })
+    });
 
     // routes users vs admins
     function isLoggedIn(req, res, next) {
