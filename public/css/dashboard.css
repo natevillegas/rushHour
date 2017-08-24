@@ -4,6 +4,13 @@ footer {
   padding-left: 310px;
 }
 
+/*html, body{
+        margin:0px;
+        padding:0px;
+        height:100%;
+        overflow:hidden;
+    }   */
+
 body {
   background: white;
 }
