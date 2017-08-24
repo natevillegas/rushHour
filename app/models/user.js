@@ -7,6 +7,11 @@ module.exports = function(sequelize, Sequelize) {
             primaryKey: true,
             type: Sequelize.INTEGER
         },
+
+        admin: {
+            type: Sequelize.BOOLEAN,
+            defaultValue: false
+        },
  
         firstname: {
             type: Sequelize.STRING,

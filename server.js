@@ -17,13 +17,16 @@ app.use(session({ secret: 'keyboard cat',resave: true, saveUninitialized:true}))
 app.use(passport.initialize());
  
 app.use(passport.session()); // persistent login sessions
- 
+
+app.use(express.static(process.cwd() + "/public"));
  
 app.get('/', function(req, res) {
  
     res.send('Welcome to Passport with Sequelize');
  
 });
+
+
 
 // For Handlebars
 app.set('views', './app/views')
