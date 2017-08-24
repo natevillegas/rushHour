@@ -4,9 +4,7 @@
  
         "username": "root",
  
-        "password": "root",
-        
-        "port": 8889,
+        "password": "",
  
         "database": "sequelize_passport",
  
