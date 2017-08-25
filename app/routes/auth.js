@@ -20,7 +20,8 @@ module.exports = function(app, passport) {
  
     ));
 
-    // Get request to obtain Appointments table data for insertion to dashboard calendar
+// Get request to obtain Appointments table data for insertion to dashboard calendar
+
     app.get("/api/all", function(req, res) {
          db.appointments.findAll({
             include: [db.user]
@@ -29,10 +30,9 @@ module.exports = function(app, passport) {
            // dataConvert(dbPost);
           return res.json(dbPost);
           // res.render("");
-
         })
     });
-
+    
     // routes users vs admins
     function isLoggedIn(req, res, next) {
         if (req.isAuthenticated() && req.user.admin == 0) {

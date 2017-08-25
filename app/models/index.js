@@ -39,7 +39,6 @@ db.user = require('./user.js')(sequelize, Sequelize);
 db.appointments = require('./appointments.js')(sequelize, Sequelize);
 
 
-//Relations 
 db.appointments.belongsTo(db.user, {
  foreignKey: {
    // allowNull: false
