@@ -13,37 +13,125 @@
 
     <title>Rush Hour</title>
 
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+     
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <!-- Link to Custom CSS -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
     <!-- Bootstrap core CSS -->
     <link href="../../../../dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 
+
+
     <!-- Custom styles for this template -->
-    <link href="/css/authstyle.css" rel="stylesheet">
+    <link href="/../public/css/authstyle.css" rel="stylesheet">
+
+
+
+
   </head>
 
-  <body>
+  <style>
 
-    <div class="container">
+body{
+  background-color: transparent;
+  background-image: url("images/barber.png");
+
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+  body {
+  
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+   
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+.empty{
+  background-color: yellow;
+height: 700px;
+width: 700px;
+
+}
+h4{
+  font-size: 50px;
+  color: white;
+  /*margin-top: 80%;*/
+font-family: 'Pacifico', cursive;
+}
+
+ul{
+  background-color: teal;
+}
+nav{
+  background-color:transparent;
+
+}
+.text-muted{
+  color:yellow;
+}
+h3{
+  color:white;
+  margin-top: 30px;
+}
+.login{
+  color:yellow;
+}
+.text, .password, .firstname, .lastname {
+  color:yellow;
+}
+
+
+
+
+</style>
+
+
+
+  <!-- <body> -->
+
+    
+
       <div class="header clearfix">
+      <h3>Rush Hour</h3>
         <nav>
           <ul class="nav nav-pills float-right">
           {{#if user}}
             <li class="nav-item"><a class="nav-link active" href="/">Dashboard</a></li>
             <li class="nav-item"><a class="nav-link active" href="/users/logout">Logout</a></li>
             {{else}}
-            <li class="nav-item"><a class="nav-link active" href="/signin">Login</a></li>
+            <li class="nav-item"><a class="nav-link active"  href="/dashboard">Login</a></li>
             <li class="nav-item"><a class="nav-link active" href="/signup">Register</a></li>
             {{/if}}
             
           </ul>
         </nav>
-        <h3 class="text-muted">Project name</h3>
+        <!-- <h3 class="text-muted" id="logo">Rush Hour</h3> -->
       </div>
 
       <div class="row">
         <div class="col-lg-12">
-          {{{body}}}
+          {{!-- {{{body}}} --}}<center>
+        <div class="row">
+          <img src="bbs.jpg">
+        </div>
+      </center>
         </div>
 
         
@@ -55,14 +143,13 @@
         <label for="email">Email Address</label>
         <input class="text" name="email" type="email" />
         <label for="firstname">Firstname</label>
-        <input name="firstname" type="text" />
+        <input class="firstname" name="firstname" type="text" />
         <label for="lastname">Lastname</label>
-        <input name="lastname" type="text" />
+        <input class="lastname" name="lastname" type="text" />
         <label for="password">Password</label>
-        <input name="password" type="password" />
+        <input class="password" name="password" type="password" />
         <input class="btn" type="submit" value="Sign Up"/>
     </form> <!-- /container -->
-
 
 
     <!-- Bootstrap core JavaScript
