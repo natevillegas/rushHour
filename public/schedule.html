@@ -66,6 +66,8 @@
       <span class="morningTime">Morning Time</span>
       <br>
       <div class="container morningTime" id="morningButton">
+
+      
          <button class="btn timeButton" type="submit" value="10:00AM">10:00AM</button>
         <button class="btn timeButton" type="submit" value="10:30AM">10:30AM</button>
         <button class="btn timeButton" type="submit" value="11:00AM">11:00AM</button>
@@ -76,6 +78,8 @@
       <span class="afternoonTime">Afternoon Time</span>
       <br>
       <div class="container afternoonTime" id="afternoonButtons">
+      <form method="POST" action="/schedule/create" class="button-size">
+
         <button class="btn timeButton" type="submit" value="12:00PM">12:00PM</button>
         <button class="btn timeButton" type="submit" value="12:30PM">12:30PM</button>
          <button class="btn timeButton" type="submit" value="1:00PM">1:00PM</button>
@@ -93,6 +97,7 @@
       </div>
        <button type="button" class="btn" type="submit" id="schedule">Schedule</button>
        <button type="button" class="btn" type="reset" id="resetSchedule">Reset</button>
+       </form>
    </div>
 </div>
 <div class="container fluid" id="reservationInfo">
