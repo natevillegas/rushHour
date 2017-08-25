@@ -4,7 +4,7 @@ module.exports = function(app, passport) {
     app.get('/signup', authController.signup);
     app.get('/signin', authController.signin);
     app.post('/signup', passport.authenticate('local-signup', {
-        successRedirect: '/dashboard',
+        successRedirect: 'schedule.html',
         failureRedirect: '/signup'
         }
     ));
@@ -19,6 +19,19 @@ module.exports = function(app, passport) {
  
     ));
 
+    // Get request to obtain Appointments table data for insertion to dashboard calendar
+    app.get("/api/all", function(req, res) {
+         db.appointments.findAll({
+            include: [db.user]
+         }).then(function(dbPost) {
+
+           // dataConvert(dbPost);
+          return res.json(dbPost);
+          // res.render("");
+
+        })
+    });
+
     // routes users vs admins
     function isLoggedIn(req, res, next) {
         if (req.isAuthenticated() && req.user.admin == 0) {
@@ -28,3 +41,4 @@ module.exports = function(app, passport) {
         }
     }
 }
+
