@@ -38,8 +38,14 @@ db.Sequelize = Sequelize;
 db.user = require('./user.js')(sequelize, Sequelize);   
 db.appointments = require('./appointments.js')(sequelize, Sequelize);
 
+
 //Relations 
-db.appointments.belongsTo(db.user);  
+db.appointments.belongsTo(db.user, {
+ foreignKey: {
+   // allowNull: false
+ }
+});  
+
 db.user.hasMany(db.appointments);
 
 module.exports = db;

@@ -70,7 +70,7 @@ $('.timeButton').on('click',function(){
 });
 $('#schedule').on('click',function(){
     //Get date and user info and place into database when clicked on the booked time
-    $('#reservationTime').text(customerTimeSelected + " at " + dateSelected);
+    $('#reservationTime').text(customerTimeSelected + " on " + dateSelected);
     $('.morningTime').hide();
     $('.afternoonTime').hide();
     $('#reservationInfo').show();

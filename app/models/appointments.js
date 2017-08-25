@@ -1,6 +1,6 @@
 module.exports = function(sequelize, Sequelize) {
  
-    var Appointments = sequelize.define('Appointment', {
+    var Appointments = sequelize.define('Appointments', {
  
         id: {
             autoIncrement: true,
