@@ -41,7 +41,8 @@ module.exports = function(app, passport) {
             time: req.body.time
          }).then(function(dbPost) {
 
-          return res.json(dbPost);
+          // return res.json(dbPost);
+          res.redirect("/signin");
 
         })
     });
@@ -49,10 +50,10 @@ module.exports = function(app, passport) {
     // routes users vs admins
     function isLoggedIn(req, res, next) {
         if (req.isAuthenticated() && req.user.admin == 0) {
-            return next();
+            res.redirect('schedule.html');
         } else {
-            res.redirect('/signin');
+            // res.redirect('/si')
+            return next();
         }
     }
 }
-
