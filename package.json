@@ -4,8 +4,8 @@
   "description": "### Table of Contents 1. Dependencies 2. Technologies 3. Description 4. Use 5. Credits",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "set NODE_ENV=production && node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+    // "start": "set NODE_ENV=production && node server.js"
     // "setupDB": "sequelize db:migrate && sequelize db:seed:all",
     // "heroku-postbuild": "sequelize db:migrate && sequelize db:seed:all"
   },
