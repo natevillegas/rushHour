@@ -58,6 +58,34 @@
 </nav>
 <!-- class="jumbotron"  -->
 <div class="container">
+<!-- Input New Burgers Form -->
+      <form action="appointment/create" method="POST">
+        
+       <!-- Text Area Input -->
+        <div class="row">
+          <!-- Empty Div to help center textarea -->
+          <div class="col-md-3"></div>
+
+         <!-- Appointment Input Box -->
+          <div class="form-group col-md-6">
+            <center><label for="new_burger" class="red_font">Appointment Form</label></center>
+            <br>
+
+            <p>Name: </p>
+            <input class="form-control" columns="8" rows="4" id="new_burger" name="name"></textarea>
+            <br>
+
+            <p>Date: </p>
+            <input class="form-control" columns="8" rows="4" id="new_burger" name="day"></textarea>
+            <br>
+
+            <p>Time: </p>
+            <input class="form-control" columns="8" rows="4" id="new_burger" name="time"></textarea>
+          </div>
+
+          <center>
+            <button id="submit-button" type="submit" class="btn btn-danger">Schedule Appointment</button>
+          </center>
    <div class="jumbotron" id="datepickerBackground">
       <h5>Pick the date you want to make a reservation:</h5>
       <button class="btn datepicker">Calendar</button>

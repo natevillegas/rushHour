@@ -71,7 +71,7 @@ $.get("/api/all", function(dbPost) {
 
   for(var i = 0; i < data.length; i ++) {
 
-      name +=i;
+      name = data[i].name;
       day = data[i].day;
       time = data[i].time
 
