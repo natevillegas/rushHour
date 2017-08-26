@@ -4,22 +4,22 @@
   "description": "### Table of Contents 1. Dependencies 2. Technologies 3. Description 4. Use 5. Credits",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    // "start": "set NODE_ENV=production && node server.js"
-    // "setupDB": "sequelize db:migrate && sequelize db:seed:all",
-    // "heroku-postbuild": "sequelize db:migrate && sequelize db:seed:all"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "set NODE_ENV=production && node server.js",
+    "setupDB": "sequelize db:migrate && sequelize db:seed:all",
+    "heroku-postbuild": "sequelize db:migrate && sequelize db:seed:all"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Georgeyoo/rush-hour.git"
+    "url": "git+https://github.com/Thgi/rushHour.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Georgeyoo/rush-hour/issues"
+    "url": "https://github.com/Thgi/rushHour/issues"
   },
-  "homepage": "https://github.com/Georgeyoo/rush-hour#readme",
+  "homepage": "https://github.com/Thgi/rushHour#readme",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
