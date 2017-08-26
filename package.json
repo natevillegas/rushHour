@@ -6,20 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "engines": {
-    "node": "7.8.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Thgi/rushHour.git"
-  },
-  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Thgi/rushHour/issues"
+    "url": "https://github.com/natevillegas/rushHour/issues"
   },
-  "homepage": "https://github.com/Thgi/rushHour#readme",
+  "homepage": "https://github.com/natevillegas/rushHour#readme",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.17.2",
