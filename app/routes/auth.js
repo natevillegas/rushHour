@@ -32,6 +32,19 @@ module.exports = function(app, passport) {
           // res.render("");
         })
     });
+
+    // Post request to create Appointments
+    app.post("/appointment/create", function(req, res) {
+         db.appointments.create({
+            name: req.body.name,
+            day: req.body.day,
+            time: req.body.time
+         }).then(function(dbPost) {
+
+          return res.json(dbPost);
+
+        })
+    });
     
     // routes users vs admins
     function isLoggedIn(req, res, next) {
