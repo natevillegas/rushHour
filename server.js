@@ -6,6 +6,9 @@ var bodyParser = require('body-parser');
 var env = require('dotenv').load();
 var exphbs = require('express-handlebars');
 
+
+var port = process.env.port || 5000;
+
 //For BodyParser
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -39,13 +42,13 @@ app.set('view engine', '.hbs');
 // app.set("view engine", "handlebars");
  
  
-app.listen(5000, function(err) {
+// app.listen(5000, function(err) {
  
-    if (!err)
-        console.log("Site is live");
-    else console.log(err)
+//     if (!err)
+//         console.log("Site is live");
+//     else console.log(err)
  
-});
+// });
 
 //Models
 var models = require("./app/models");
@@ -57,7 +60,14 @@ var authRoute = require('./app/routes/auth.js')(app,passport);
 require('./app/config/passport/passport.js')(passport, models.user);
  
 //Sync Database
-models.sequelize.sync().then(function() {
+models.sequelize.sync({}).then(function() {
+	app.listen(port, function(err) {
+ 
+    if (!err)
+        console.log("Site is live");
+    else console.log(err)
+ 
+});
  
     console.log('Nice! Database looks fine')
  
