@@ -30,13 +30,15 @@
  
     "production": {
  
-        "username": "",
+        "username": "xfxqfpka3cm6j7ts",
  
-        "password": null,
+        "password": "x9ggjm7lyr9grenv",
  
-        "database": "",
+        "database": "sequelize_passport",
  
-        "host": "127.0.0.1",
+        "host": "l6slz5o3eduzatkw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
+
+        "use_env_variable": "JAWSDB_URL",
  
         "dialect": "mysql"
  
