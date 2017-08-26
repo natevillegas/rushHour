@@ -29,6 +29,8 @@
     },
  
     "production": {
+
+        "host": "mysql://e7838ymia6h4rphh:gi5kp47gatb35msu@l6slz5o3eduzatkw.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/j5355bqhfyut7h1g",
  
         "use_env_variable": "JAWSDB_URL",
  
