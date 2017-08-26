@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "set NODE_ENV=production && node server.js",
-    "setupDB": "sequelize db:migrate && sequelize db:seed:all",
-    "heroku-postbuild": "sequelize db:migrate && sequelize db:seed:all"
+    "setupDB": "sequelize db:migrate && sequelize db:seed:all"
+    // "heroku-postbuild": "sequelize db:migrate && sequelize db:seed:all"
   },
   "repository": {
     "type": "git",
